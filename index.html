@@ -1,0 +1,68 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <link rel="icon" href="https://cdn.dribbble.com/users/1938962/screenshots/6046546/laurence_andrews_dribbble_bluesight_logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <h3 class="btn btn-default heading">Image recognition</h3>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+      <b class="name_of_objects">
+
+        Box
+        <hr>
+
+        Pouch
+        <hr>
+
+        Colors
+        <hr>
+
+        Phone Adapter
+        <hr>
+
+        Tablet Pouch
+        <hr>
+
+      </b>
+
+
+      <label>Webcam View - </label>
+      <div id="camera"></div>
+
+      <br><br>
+      <div id="result"></div>
+      <br><br>
+      <button class="btn btn-info" onclick="take_snap()">Click a picture</button>
+      <br><br>
+      <button class="btn btn-success" onclick="identify_a_pic()">Identify the picture</button>
+      <br><br>
+
+      <p style="font-size: 22px;">Object :  <span id="result_object_name"></span></p>
+      <p style="font-size: 22px;">Accuracy :  <span id="result_accuracy"></span></p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
